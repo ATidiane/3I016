@@ -1,2 +1,4 @@
 # TidzoCode
-sdfjkjsq
+
+
+HAHAHAHAHAHAHAHA
