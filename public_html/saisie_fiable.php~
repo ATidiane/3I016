@@ -1,9 +1,0 @@
-<?php
-error_reporting(E_ALL);
-
-function saisie_fiable($tab, $chaine, $re='', $val='';) {
-  if (!$tab[$chaine]) return $val;
-  else {
-    if (!$re) return true;
-
-?>

@@ -1,6 +1,0 @@
-<?php
-error_reporting(E_ALL);
-include 'entete.php';
-include '
-include 'saisie_fiable.php';
-?>
