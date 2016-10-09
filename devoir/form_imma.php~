@@ -1,0 +1,12 @@
+<?php
+error_reporting(E_ALL);
+function form_imma($chaine) {
+  echo "<fieldset>".
+       "<form action='form.imma.php' method='get'>\n".
+       "<input id='plaque' name='plaque' type='text' value='$chaine'/>\n".
+       "<label for='plaque'>Plaque d'immatriculation</label>\n".
+       "</form>\n</fieldset>\n";
+       
+}
+
+?>
