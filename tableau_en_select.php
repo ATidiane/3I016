@@ -18,7 +18,7 @@ function tableau_en_select($tab, $chaine) {
         "<input type='submit'/>\n".
         "</fieldset>\n</form>\n";
 
-    return "<body>\n"$form"</body>\n</html>\n";
+    return "<body>\n$form</body>\n</html>\n";
 }
 
 echo tableau_en_select($desc_diplomes, 'ahmed');
