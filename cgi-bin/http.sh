@@ -1,0 +1,17 @@
+#!/bin/sh
+cat << EOF
+Content-type: text/html;charset:utf-8
+
+<html><head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+</head>
+<body>
+EOF
+echo "<table><caption>Table des variables du serveur</caption>"
+echo "<tr><th>nom des variables</th><th>valeur des variables</th></tr>"
+echo "<tr><td>Serveur_name</td><td>$SERVER_NAME</td>"
+echo "<tr><td>Serveur_software</td><td>$SERVER_SOFTWARE</td>"
+echo "<tr><td>Serveur_addr</td><td>$SERVER_ADDR</td>"
+echo "<tr><td>Remote_port</td><td>$REMOTE_PORT</td>"
+echo "<tr><td>Remote_addr</td><td>$REMOTE_ADDR</td>"
+echo "</table></body></html>"
