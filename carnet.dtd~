@@ -1,0 +1,11 @@
+<!ELEMENT carnet (ami*)>
+<!ELEMENT ami (prenom, nom, adresse*, mobile*)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT adresse (rue, ville)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT mobile EMPTY>
+
+<!ATTLIST prenom genre (M.|Mme) #REQUIRED>
+<!ATTLIST rue numero 

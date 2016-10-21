@@ -1,0 +1,35 @@
+<?php 
+error_reporting(E_ALL);
+
+function ouvrante($parser, $name, $attrs) {
+  if ('prenom' == $name) {
+    echo "<div>Ouverture de: $name ";
+    foreach ($attrs as $key => $val) {
+      echo "$val </div>\n";
+    }
+  }
+  if ('nom' == $name) {
+    echo "<div>Ouverture de: $name</div>\n";
+  }
+}
+
+function fermante($parser, $name) {
+  echo "<div>Fermeture de: $name<br/></div>\n";
+}
+
+function texte($parser, $name) {
+  if (trim($data) == '')
+    echo "<div>Saut de ligne</div>\n";
+  else
+    echo "<div>$data</div><br/>\n";
+}
+
+include 'entete.php';
+echo entete('Affichage du genre, prenom et nom');
+echo "<body>";
+$fichier = $_GET['fichier'];
+include 'phraser_table.php';
+$res = phraser($fichier, 'ouvrante', 'fermante', 'texte');
+if ($res) echo $res;
+echo "</body></html>\n";
+?>

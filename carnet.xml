@@ -1,0 +1,40 @@
+<carnet>
+  <ami>
+    <prenom genre='M.'>Al</prenom>
+    <nom>Gorithm</nom>
+    <adresse numero='0123456789'>
+      <rue numero='8'>boulevard des Moteurs de Recherche</rue>
+      <ville codepostal='75001'>Paris</ville>
+    </adresse>
+    <adresse numero='0234567891'>
+      <rue numero='1'>impasse de l'Evasion Fiscale</rue>
+      <ville codepostal='06000'>Monaco</ville>
+    </adresse>
+  </ami>
+
+  <ami>
+    <prenom genre='Mme'>Fleur</prenom>
+    <nom>de Style</nom>
+    <mobile telephone='0789123456'/>
+    <mobile telephone='0678912345'/>
+    <adresse>
+      <rue numero='7'>rue de la Typographie</rue>
+      <ville codepostal='75001'>Paris</ville>
+    </adresse>
+  </ami>
+
+  <ami>
+    <prenom genre='Mme'>Alexandra</prenom>
+    <nom>Phone</nom>
+    <adresse>
+      <rue numero='6'>chaussée de la Muette</rue>
+      <ville codepostal='75016'>Paris</ville>
+    </adresse>
+  </ami>
+
+  <ami>
+    <prenom genre='M.'>Vincent</prenom>
+    <nom>Domicile-Fixe</nom>
+    <mobile telephone='0654321987'/>
+  </ami>
+</carnet>
