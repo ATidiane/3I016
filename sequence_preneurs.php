@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 
 function ouvrante($parser, $name, $attrs){
     echo "<div style='color:green'>Ouverture de:<tt style='color:black'>";
-    echo " $name " ;
-    foreach ($attrs as $cle=>$valeur){
+    echo " $name ";
+    foreach ($attrs as $cle=>$valeur) { 
         echo "$cle='" . $valeur . "' ";
     }
     echo "</tt></div>\n";

@@ -23,7 +23,7 @@ function texte($p, $text){
       echo $text;
 }
 
-$fichier = $_GET['fichier'];;
+$fichier = $_GET['fichier'];
 include('phraser_table.php');
 header('Content-Type: text/plain; charset=utf-8');
 $resultat = phraser($fichier, 'ouvrante', 'fermante', 'texte');   
