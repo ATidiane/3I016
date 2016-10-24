@@ -1,0 +1,9 @@
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'>
+<g transform='translate(10,10),scale(1,1)'>
+<rect height='55' width='100' x='0' y='75' fill='red' />
+<rect height='45' width='50' x='100' y='75' fill='green' />
+<rect height='15' width='50' x='0' y='75' fill='blue' />
+<rect height='22' width='50' x='50' y='75' fill='green' />
+<rect height='63' width='50' x='100' y='75' fill='yellow' />
+</g></svg>

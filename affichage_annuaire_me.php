@@ -2,7 +2,7 @@
 function ouvrante($parser, $name, $attrs) {
     global $last;
     if (isset($attrs['genre']))
-       echo $attrs['genre'], ' ':
+       echo $attrs['genre'], ' ';
     $last = $name;
 }
 
