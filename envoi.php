@@ -25,9 +25,10 @@ $rect = '';
   
 }
 
-include 'rectangle.php';
-include_once 'testSimpleTable2.php';
+include_once 'rectangle.php';
+
+#include_once 'testSimpleTable2.php';
 #include_once 'tablerect.php';
-echo rectangles(rectangle($ex));
+echo rectangles(rectangle($t));
 
 ?>

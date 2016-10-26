@@ -9,11 +9,11 @@ function ouvrante($parser, $name, $attrs) {
   if ('table' == $name) $tab = array();
   
   if ('tr' == $name) {
-    $tab[$l][] = array();
+    $tab[$l] = array();
   }
   
   if ('td' == $name) {
-    $tab[$l][$c][] = array();
+    $tab[$l][$c] = array();
 
     foreach ($attrs as $k => $v) {
       $tab[$l][$c][$k] = $v;
