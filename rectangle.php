@@ -8,10 +8,9 @@ function rectangle($table, $hauteur=75, $largeur=50) {
         $j = 0;
         $tab[$i][$j] = array();
 
-        if ($i == 0) $a = $hauteur;
-        else $a = ($i+1)*$hauteur;
         foreach ($td as $att => $val) {
-            if ($j == 0) {
+          if ($j == 0) {
+            if ($i == 0) $a = $hauteur;
                 $tab[$i][$j]['height'] = $table[$tr][$att]['contenu'];
                 $tab[$i][$j]['width'] = $table[$tr][$att]['colspan']*$largeur;
                 $tab[$i][$j]['x'] = 0;
@@ -36,7 +35,7 @@ function rectangle($table, $hauteur=75, $largeur=50) {
 
 $t = include 'phraser_table_6.php';
 #include 'testSimpleTable2.php';
-# rectangle($t);
+#var_dump(rectangle($t));
 #var_dump($t);
 
 ?>
