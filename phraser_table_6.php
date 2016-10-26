@@ -47,8 +47,8 @@ include_once 'phraser_table.php';
 
 global $tab, $l, $c;
 
-$fichier = 'testSimpleTable.html';
-#$fichier = $_GET['fichier'];
+#$fichier = 'test-svg.html';
+$fichier = $_GET['fichier'];
 phraser($fichier, 'ouvrante', 'fermante', 'texte');
 #var_dump($tab);
 #echo ("<br/><br/>Ce tableau contient $l ligne(s) et $c colonne(s)");

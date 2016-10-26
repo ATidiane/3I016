@@ -2,8 +2,7 @@
 error_reporting(E_ALL);
 
 function rectangle($table, $hauteur=75, $largeur=50) {
-#  global $totaly;
-#  global $totalheight;
+
   $totaly = 0;
   $totalheight = 0;
   $tab = array();
@@ -23,11 +22,12 @@ function rectangle($table, $hauteur=75, $largeur=50) {
         $tab[$i][$j]['height'] = $contenu;
         $tab[$i][$j]['width'] = $colspan*$largeur;
         $tab[$i][$j]['x'] = 0;
-        $tab[$i][$j]['fill'] = ($res = preg_match('@: ([^;]+);@', $style, $r)) ?  $r[1] : exit;
 
         if ($i == 0) $tab[$i][$j]['y'] = $hauteur;
         else
           $tab[$i][$j]['y'] = $totaly + ($totalheight - $tab[$i][$j]['height']); 
+
+        $tab[$i][$j]['fill'] = ($res = preg_match('@: ([^;]+);@', $style, $r)) ?  $r[1] : exit;
         
       } else {
         $tab[$i][$j] = array();
