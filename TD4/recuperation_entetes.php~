@@ -1,0 +1,21 @@
+<?php
+error_reporting(E_ALL);
+
+include_once 'connexion.php';
+include_once 'entete_smtp.php';
+
+function recuperation_entetes($sock, $nomsg) {
+    $rep = commande($sock, "TOP ". 0);
+    if ($rep) {
+        $entetes = array();
+        while ($line = trim(fgets($sock, 4096)) != '.') {
+            if(preg_match('RE_ENTETE_SMTP', $line, $r)) {
+                $entetes[$r[1]] = $r[2];
+            } else {
+                
+            }
+        }
+    }
+    return $entetes;
+}
+?>

@@ -23,6 +23,7 @@ function requete_ressource($req, $url) {
     //lecture de la première ligne seulement
     $status = fgets($sock);
     $entetes = array();
+    
     //lecture de toutes les lignes jusqu'à la première ligne
     while (strlen($l = fgets($sock)) > 2) {
         if (preg_match('RE_ENTETE_SMTP', $l, $x)) {
@@ -36,6 +37,6 @@ function requete_ressource($req, $url) {
     
 }
 
-echo requete_ressource('GET', 'http://localhost');
+#echo requete_ressource('GET', 'http://localhost');
 
 ?>

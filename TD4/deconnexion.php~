@@ -1,0 +1,10 @@
+<?php
+error_reporting(E_ALL);
+include_once 'connexion.php';
+
+function deconnexion($sock) {
+    echo commande($sock, 'QUIT');
+    @fclose($sock);
+}
+
+?>
