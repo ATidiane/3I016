@@ -1,5 +1,6 @@
 #!/bin/bash
 a=$(date)
+rm -v *~
 git add $@
 git commit -m "$a" $@
 git push origin master

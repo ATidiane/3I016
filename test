@@ -1,5 +1,6 @@
 #!/bin/bash
 a=$(date)
+rm -v *~
 sudo git add $@
 sudo git commit -m "$a" $@
 sudo git push origin master
