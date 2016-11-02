@@ -1,0 +1,13 @@
+<?php
+
+include('constante.php');
+
+if( !isset($_GET['id_post']) OR !isset($_GET['texte']) OR !isset($_GET['date']) ) {
+
+header('400,bad request');
+
+}else {
+
+if(isset($_COOKIE['code_auth']){
+for($users as $k => $v){
+if(

@@ -1,0 +1,8 @@
+<!ELEMENT forum (post*) >
+<!ELEMENT post (subject,text,response*) >
+
+<!ATTLIST post 
+	  id CDATA #REQUIRED
+	  user CDATA #REQUIRED
+	  category CDATA #REQUIRED
+	  date CDATA #REQUIRED >

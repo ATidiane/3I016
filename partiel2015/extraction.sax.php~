@@ -1,0 +1,26 @@
+<?php
+error_reporting(E_ALL);
+
+function ouverture($parser, $name, $attrs) {
+  global $partition, $last;
+  if('partition' == $name) $partition = array();
+  if ('listenotes' == $name) $partition['listenotes'] = array();
+  foreach ($attrs as $k => $v) {
+    
+  }
+  $last = $name;
+}
+
+function fermeture($parser, $name) {
+  global $partition, $last;
+  if ($name == $last) 
+}
+function texte($parser, $data) {
+  global $partition, $last;
+  if(trim($data) == '') {
+    if('titre' == $last) $partition['titre'] = $data;
+    if('auteur' == $last) $partition['auteur'] = $data;
+  }
+}
+
+?>

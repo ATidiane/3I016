@@ -1,0 +1,9 @@
+<?php
+error_reporting(E_ALL);
+
+function afficher_piano_roll(x=1, y=1, h=15, l=50, tx=10, ty=10) {
+  $form = "";
+  
+}
+
+?>

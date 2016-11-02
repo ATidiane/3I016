@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-15' standalone='no' ?>
+<!DOCTYPE partition SYSTEM 'partition_musicale.dtd' >
+<partition>
+	<titre>BackToTheFuture</titre>
+	<listenotes>
+		<note valeur="SILENCE"   duree="1" />
+		<note valeur="RE"   	 duree="1"    alteration='B' />
+		<note valeur="LA"   	 duree="1.5"  alteration='B' />
+		<note valeur="RE"   	 duree="0.5"  alteration='B' />
+		<note valeur="DO"   	 duree="1.5"  alteration='B' />
+		<note valeur="SI"   	 duree="0.25" alteration='B' />
+		<note valeur="LA"   	 duree="0.25" alteration='B' />
+		<note valeur="SOL"  	 duree="0.6"  alteration='B' />
+		<note valeur="LA"   	 duree="0.6"  alteration='B' />
+		<note valeur="SOL"  	 duree="0.6"  alteration='B' />
+	</listenotes>
+	<listenotes>
+		<note valeur="SILENCE"   duree="5" />
+		<note valeur="LA"   	 duree="1"  alteration='B' />
+		<note valeur="SI"   	 duree="1"  alteration='B' />
+		<note valeur="DO"   	 duree="1"  alteration='B' />
+	</listenotes>
+</partition>

@@ -1,0 +1,43 @@
+<?php
+error_reporting(E_ALL);
+include 'functions.php';
+
+
+function ouvert ($parser, $name, $attrs) {
+  global $forum, $last;
+  
+  if ('forum' == $name) $forum = array();
+  if ('post' == $name) {
+    $id = $attrs['id'];
+    if (isset($i)) {
+      $forum[$id] = array();
+    }
+    foreach($attrs as $key => $val) {
+      if ((is_string($val)) and (trim($key) != 'id')) {
+        $forum[$id][$key] = $val;
+      } elseif(is_array($val)) {
+        $forum[$id][$key] = array();
+      }  
+    }
+  }
+  if ('response' == $name) {
+    $forum[$id]['responses'][count($forum[$id]['responses'])-1][] =
+      array("user" => $attrs['user'],
+            "date" => $attrs['date']);
+  }
+  $last = $name;
+}
+
+function fermeture ($parser, $name) {
+  
+}
+
+function texte ($parser, $data) {
+  global $contenu;
+  if(trim($data) != '') $contenu = htmlspecialchars($data);
+}
+$fichier = 'forum.xml';
+lancer_phraseur($fichier);
+return $forum;
+
+??>

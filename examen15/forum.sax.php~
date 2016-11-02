@@ -1,0 +1,64 @@
+<?php
+
+include ('entete.php');
+include ('functions.php');
+
+function ouverture($parser,$name,$attrs) {
+
+	 global $forum;
+	 global $contenu;
+
+if('forum'==$name){
+	$forum=array();
+}// i think its not needed , u can straightly put for the posts!
+
+if('post'==$name){
+$id=$attrs['id'];
+$forum['$id']=array();
+$forum['$id']['category']=$attrs['category'];
+$forum['$id']['user']=$attrs['user'];
+$forum['$id']['date']=$attrs['date'];
+}
+
+if('subject'==$name'){
+$forum['$id']['subject']=$contenu;
+}
+if('text'==$name'){
+$forum['$id']['text']=$contenu;
+}
+
+if('response'==$name){
+$forum['$id']['response']=array();
+$forum['$id']['response']['user']=$attrs['user'];
+$forum['$id']['response']['date']=$attrs['date'];
+$forum['$id']['response']['contenu']=$contenu;
+}
+
+}
+
+
+function texte($parser,$data) {
+	 
+global $contenu;
+
+if('subject'==$name){ $contenu = $data; }
+if('text'==$name){ $contenu = $data; }
+if('response'==$name){ $contenu = $data; }
+
+
+}
+
+
+function fermeture($parser,$name) {
+}
+
+
+echo entete("ForumTest1");
+$res=lancer_phraseur('forum.xml');
+if(!res){
+	echo $res;
+}else{
+	var_dump($forum);
+}
+
+?>

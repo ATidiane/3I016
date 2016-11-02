@@ -1,0 +1,12 @@
+<?php
+error_reporting(E_ALL);
+
+define('RE_FICHIER', '@\w+((-|_)\w+)?\.xml@');
+function verifier_fichier($nom) {
+  if (preg_match(RE_FICHIER, $nom)) {
+    if (fopen('r', $nom)) return true;
+  }
+  return false;
+}
+
+?>
