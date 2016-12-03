@@ -1,0 +1,6 @@
+li ul { display:none }
+li:hover > ul { display:block }
+ul li { color:black;line-height:2em;border-color:grey;border:0.1em solid; width: 10em}
+li ul li { line-height:1,5em; background-color:#ff69b4 }
+li { list-style-type: none; text-align:center }
+li:hover { background-color:grey }
