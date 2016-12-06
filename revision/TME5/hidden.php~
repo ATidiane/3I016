@@ -1,0 +1,14 @@
+<?php
+
+include 'naviguer.php';
+
+$s = $_POST['page'] ? ($_POST['page']*$v) : 1;
+$v = $_POST['page'] ? ($v+1) : 1;
+
+if (!is_numeric($s)) {
+    echo "<body>\n<div> Bon voyage pour ". $s . "</div>\n</body>\n";
+}
+
+
+
+?>

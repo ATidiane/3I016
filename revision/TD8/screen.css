@@ -1,0 +1,47 @@
+.calendrier-salle th {width: 12%} /*groupe*/
+.calendrier-salle th+th {width: 35%} /*intervenants*/
+.calendrier-salle th+th+th {width: 25%}
+.calendrier-salle th+th+th+th {width: 10%}
+.calendrier-salle th+th+th+th+th {width: 18%}
+
+.calendrier-salle td { border: 1px solid;}
+
+.couleur2 /* Bleu */ {
+	background: #edf3fe; border-color: #5da7c5; color: #5da7c5;
+} 
+
+.couleur3 /* Bleu pastel */ { 
+	background: #ebe9ff; border-color: #766cf6; color: #766CF6;
+} 
+
+.couleur4 /* Orange */ {
+	background: #fec; border-color: #fa9a00; color: #fa9a00;
+} 
+
+.couleur5 /* Rouge */ {
+	background: #ffeded; border-color: #f00; color: #f00;
+} 
+
+
+a.abonnement {
+	height: 2em;
+	width: 2em;
+	margin-left: 1em;
+	display: block;
+	background: url(agenda-24.gif) no-repeat;
+}
+
+a.telechargement {
+	height: 2em;
+	width: 2em;
+	margin-left: 1em;
+	display: block;
+	background: url(calendrier-24.gif) no-repeat;
+}
+
+.modif {
+	width: .75em;
+	height: .75em;
+	display: inline-block;
+	background: url(puce-blanche.gif)  no-repeat;
+}

@@ -1,0 +1,17 @@
+<?php
+
+include 'cherche_index_n.php';
+
+function naviguer($tab, $num, $mult, $chaine='') {
+    $descriptif = cherche_index_n($tab, $num)
+    $input = "<input type='submit' value="
+    if ($pp >= 0) {
+        $input .= "<input type='submit' value=$pp />";
+    }
+    if ($ps < count($tab)) {
+        $input .= "<input type='submit' value=$ps />";
+    }
+    $form = "<form method='post' action='' style= 'widht:15%'>";
+}
+
+?>

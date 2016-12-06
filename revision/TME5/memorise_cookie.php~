@@ -1,0 +1,20 @@
+<?php
+
+require_once('../entete.php');
+include('naviguer.php');
+
+function memorise_cookie()  {
+
+    if (!isset($_COOKIE['visite'])) {
+        $id = md5(mt_rand($_SERVER[''])) . md5(mt_rand($_SERVER['']));
+        $d = fopen($id, 'w');
+        $_COOKIE['visite'] = 1;
+        fputs($d, ($_COOKIE['visite']+1));
+        fclose($d);
+    }
+    setcookie('visite', $id);
+
+    return $_COOKIE['visite'];
+}
+
+?>

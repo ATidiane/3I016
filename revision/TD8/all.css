@@ -1,0 +1,5 @@
+.calendrier-salle {width: 100%; text-align: center;}
+.calendrier-salle caption {background-color: #ccc; font-weight: bold}
+.calendrier-salle td+td+td[rowspan] {font-style: italic}
+.calendrier-salle td+td+td+td[rowspan] {font-variant: small-caps; font-style: normal}
+.calendrier-salle td > ul:first-child:last-child {list-style-type: none; padding: 0; margin: 0}
