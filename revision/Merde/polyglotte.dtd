@@ -1,0 +1,7 @@
+<!ELEMENT polyglotte (site*)>
+<!ELEMENT site (lang lang+)>
+<!ELEMENT lang #PCDATA>
+<!ATTLIST site
+          serveur CDATA #REQUIRED
+          port CDATA #IMPLIED
+          accueil CDATA #IMPLIED>

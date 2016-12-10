@@ -1,0 +1,17 @@
+<polyglotte>
+ <site serveur='127.0.0.1'>
+   <lang>fr</lang>
+   <lang>en</lang>
+ </site>
+ <site serveur='www-ari.ufr-info-p6.jussieu.fr'>
+   <lang>zh</lang>
+   <lang>de-CH-1996</lang>
+   <lang>es-419</lang>
+ </site>
+ <site serveur='www-licence.ufr-info-p6.jussieu.fr'
+       port='8080'
+       accueil='/lmd/licence/2016/ue/3I016-2016oct/accept-language.php'>
+   <lang>it</lang>
+   <lang>fr_fr</lang>
+ </site>
+</polyglotte>
